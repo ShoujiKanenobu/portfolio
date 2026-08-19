@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kyle McGhie — Game Developer</title>
+  <meta name="description" content="A Game developer building systems, worlds, and fun!">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kyle McGhie — Game Developer">
+  <meta property="og:description" content="A Game developer building systems, worlds, and fun!">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='4' y='4' width='92' height='92' rx='22' fill='%23ffc247' stroke='%231d1916' stroke-width='8'/><path d='M34 30v40M34 50l28-20M43 43l22 27' stroke='%231d1916' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved) document.documentElement.setAttribute("data-theme", saved);
+
+        var lang = localStorage.getItem("lang");
+        if (lang === "en" || lang === "ja") document.documentElement.lang = lang;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-skip>Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__logo" href="#top" data-logo>&nbsp;</a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Sections">
+        <a href="#work" data-nav="work">Work</a>
+        <a href="#experience" data-nav="experience">Experience</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn lang-btn" id="lang-toggle" type="button"
+                aria-label="日本語に切り替える">
+          <span data-lang-label lang="ja">日本語</span>
+        </button>
+
+        <button class="icon-btn" id="theme-toggle" type="button"
+                aria-label="Switch between light and dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.5v2.4M12 19.1v2.4M21.5 12h-2.4M4.9 12H2.5M18.7 5.3l-1.7 1.7M7 17l-1.7 1.7M18.7 18.7L17 17M7 7L5.3 5.3"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/>
+          </svg>
+        </button>
+
+        <button class="icon-btn nav__burger" id="nav-toggle" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="wrap" id="hero"></div>
+    </section>
+
+    <section class="section section--alt" id="work">
+      <div class="wrap" id="work-inner"></div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap" id="experience-inner"></div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="wrap" id="contact-inner"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner" id="footer-inner"></div>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

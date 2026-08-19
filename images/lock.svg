@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Padlock">
+  <g transform="rotate(-4 120 120)">
+
+    <!-- hard offset shadow, in the site's violet -->
+    <g transform="translate(10 10)" fill="none" stroke="#9b8cff" stroke-width="9">
+      <path d="M85 112V86a35 35 0 0 1 70 0v26" stroke-width="17" stroke-linecap="round"/>
+      <rect x="56" y="108" width="128" height="96" rx="20" fill="#9b8cff"/>
+    </g>
+
+    <!-- shackle -->
+    <path d="M85 112V86a35 35 0 0 1 70 0v26"
+          fill="none" stroke="#1d1916" stroke-width="17" stroke-linecap="round"/>
+
+    <!-- body -->
+    <rect x="56" y="108" width="128" height="96" rx="20"
+          fill="#ffc247" stroke="#1d1916" stroke-width="9"/>
+
+    <!-- keyhole -->
+    <circle cx="120" cy="146" r="13" fill="#1d1916"/>
+    <path d="M120 155l-7 28h14z" fill="#1d1916"/>
+
+  </g>
+</svg>
